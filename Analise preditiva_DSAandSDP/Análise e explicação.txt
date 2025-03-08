@@ -1,0 +1,46 @@
+Segmentação de clientes
+Usando python, foi padronizado os dados, definido que iria 
+classificar os clientes em 3 clusters
+Aplicado o algoritmo de análise de vizinhança do padrão, Kmeans
+Depois foi ensinado a criar uma quick view no próprio jupyter,
+Mas depois os dados após publicados foram para o desktop para 
+desenvolver a visualização.
+
+ANALISE
+Foi identificado que o maior grupo de clientes é o 0, onde possuem uma média 
+de 53 anos,
+Contudo é o grupo que possui menor renda anual 
+
+O grupo 2 foi identificado como o que tem maior renda tendo uma média de 53 anos,
+contudo estão em menor número comparado ao total de clientes.
+
+O grupo 1 tem uma renda intermediária além de ser um público mais jovem.
+
+
+
+Anomalias
+instalei bibliotecas de visualização de dados e solitude que possui algoritmo de isolation forest
+Isolation forest é um algorito de aprendizado não supervisionado,
+o algoritmo que vê o padrão e determina as anomalias
+
+faz o score de anomalia que é o quão longe/perto esta do padrão dos dados
+faz um indice com o que é anomalia e o que não é, pra dividir em caixinhas
+quais transações são anomalias ou não, para que esses dados sejam 
+visualizados separadamente
+
+Em seguida plotamos
+
+
+ANALISE
+
+Após uma análise exploratória dos primeiros resultados de densidade dos scores 
+definido o corte em 0.62, pois era o valor onde não apresentava muito volume de dados.
+A primeira base de dados que foi processada pelo algoritmo isolation forest apresentou
+resultados com anomalias bem maiores.
+Mas a segunda base de dados demosntraram resultados com menos anomalia, sendo que
+a anomalia média foi do SCORE 0,59, onde significa que a anomalia 
+mais padrão, foi de 0,59 e a que mais destoou dos dados foi de 0,75
+
+De 1489 transações, 21 foram considerado anomalias, que deveriam ser analisadas
+com mais calma para identificar se trata de algum desvio de valor comum ou 
+alguma operação incorreta e até fraudulenta.
